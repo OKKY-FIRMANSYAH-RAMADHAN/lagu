@@ -52,7 +52,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+// Lagu
 $route['default_controller'] = 'LaguController';
 $route['tambahdata'] = 'LaguController/insert';
 $route['update/(:any)'] = 'LaguController/update/$1';
 $route['delete/(:any)'] = 'LaguController/delete/$1';
+
+// Genre
+$route['genre'] = 'GenreController';
+$route['genre/tambahdata'] = 'GenreController/insert';
+$route['genre/update/(:any)'] = 'GenreController/update/$1';
+$route['genre/delete/(:any)'] = 'GenreController/delete/$1';
